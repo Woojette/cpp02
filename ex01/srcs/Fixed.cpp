@@ -8,7 +8,7 @@ Fixed::Fixed()
 
 Fixed::Fixed(const int n)
 {
-  this->RawBits = n * 256;
+  this->RawBits = n << FractionalBits;
 	std::cout << "Int constructor called" << std::endl;
 }
 
