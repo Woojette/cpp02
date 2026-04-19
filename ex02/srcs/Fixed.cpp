@@ -1,7 +1,7 @@
 #include "Fixed.hpp"
 
 Fixed::Fixed()
-	: RawBits (0)
+	: RawBits(0)
 {
 	std::cout << "Default constructor called" << std::endl;
 }
@@ -21,7 +21,7 @@ Fixed::Fixed(const float f)
 Fixed::Fixed(const Fixed& other)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	*this = other;
+	this->RawBits = other.RawBits;
 }
 
 Fixed&	Fixed::operator=(const Fixed& other)
